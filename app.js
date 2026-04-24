@@ -2,6 +2,7 @@ const TYPES = {
   A: {
     hook: "Ah?",
     name: "啊？型选手",
+    image: "./assets/generated/type-a-ah.webp",
     keywords: "慢半拍 / 真诚卡顿 / 在线懵圈",
     quote: "世界在 2 倍速狂奔，你还在问刚才那句啥意思。",
     desc: "别人聊天靠反应，你聊天靠刷新。上一句刚理解，下一句已经过期，群聊对你来说像高铁站广播，听见了，但没完全听懂。优点是很少装懂，疑惑写在脸上，真诚得像刚通网。副作用是信息一多，大脑立刻弹出“当前页面无响应”。",
@@ -14,6 +15,7 @@ const TYPES = {
   B: {
     hook: "Boss",
     name: "班味老板",
+    image: "./assets/generated/type-b-boss.webp",
     keywords: "安排 / 闭环 / 我补充两点",
     quote: "人还没升职，班味已经提前转正。",
     desc: "你身上有股提前上岸的管理层气质。饭还没吃，分工已经排完；电影还没看，观后复盘模板已经在心里打开。优点是关键时刻能控场，混乱局面里自带会议纪要。副作用是生活到你手里容易变成项目，朋友聚会被你开成低配季度会。",
@@ -26,6 +28,7 @@ const TYPES = {
   C: {
     hook: "Copy",
     name: "复制粘贴侠",
+    image: "./assets/generated/type-c-copy.webp",
     keywords: "复用 / 模板 / 交差美学",
     quote: "人类文明进步靠传承，你的工作进度靠复制。",
     desc: "你的创作流程很环保：旧瓶装新酒，旧文改新名，旧方案换个封面继续发光。原创也行，主要看截止时间给不给脸。优点是效率高，知道“完成”比“完美”更能救命。副作用是复制得太丝滑，偶尔会把上一家公司的名字也带上。",
@@ -38,6 +41,7 @@ const TYPES = {
   D: {
     hook: "Drama",
     name: "加戏大师",
+    image: "./assets/generated/type-d-drama.webp",
     keywords: "脑补 / 戏多 / 内心剧场",
     quote: "现实给你一粒米，你能脑补一锅粥。",
     desc: "别人发一句“在吗”，你脑内直接上线 12 集都市悬疑。对方可能只是问个文件，你已经把关系走向、语气变化、最终结局全盘演完。优点是感受力强，细节雷达灵得吓人。副作用是证据还没来，剧本已经写到大结局。",
@@ -50,6 +54,7 @@ const TYPES = {
   E: {
     hook: "Emo",
     name: "半夜破防人",
+    image: "./assets/generated/type-e-emo.webp",
     keywords: "白天营业 / 夜晚裂开 / 情绪复盘",
     quote: "白天情绪稳定，晚上精神拆迁。",
     desc: "白天笑得像没事人，晚上手机一放，人生错题本自动翻页。从三年前一句话，到今天一个表情包，全能拿出来重新审判。优点是细腻、敏感，能从空气湿度里读出情绪变化。副作用是反思能力过强，容易把自己审到无期。",
@@ -62,6 +67,7 @@ const TYPES = {
   F: {
     hook: "Fish",
     name: "摸鱼圣体",
+    image: "./assets/generated/type-f-fish.webp",
     keywords: "低功耗 / 假装在线 / 精神省电",
     quote: "人在工位，心在免打扰。",
     desc: "别人上班燃烧自己，你上班研究怎么减少损耗。电脑亮着，表情稳着，灵魂已经在后台挂起。优点是很会判断什么事值得用力，什么事只配应付。副作用是鱼摸久了，连鱼都开始喊你前辈。",
@@ -74,6 +80,7 @@ const TYPES = {
   G: {
     hook: "Gua",
     name: "吃瓜群众",
+    image: "./assets/generated/type-g-gua.webp",
     keywords: "围观 / 雷达 / 已读不回但全知道",
     quote: "你没参战，但战报是你整理的。",
     desc: "你对热闹有天然定位系统。群里刚飘过一句“我说个事”，你已经端好小板凳。嘴上不参与，截图比谁都完整。优点是信息灵，嗅觉准，能在碎片里拼出完整八卦链。副作用是主线任务没动，支线剧情全通关。",
@@ -86,6 +93,7 @@ const TYPES = {
   H: {
     hook: "HR",
     name: "招兵买马人",
+    image: "./assets/generated/type-h-hr.webp",
     keywords: "识人 / 组局 / 人脉盘点",
     quote: "你看谁都像隐藏简历。",
     desc: "你看人自带岗位匹配系统。这个能控场，那个会写稿，还有一个适合救火，先拉群再说。优点是会组队，会协调，能把散兵游勇凑成临时正规军。副作用是朋友聚会到你手里，容易变成人才储备会。",
@@ -98,6 +106,7 @@ const TYPES = {
   I: {
     hook: "Idea",
     name: "脑洞批发商",
+    image: "./assets/generated/type-i-idea.webp",
     keywords: "想法爆仓 / 开题很快 / 落地看缘分",
     quote: "脑洞很忙，双手失业。",
     desc: "你的脑子像义乌小商品市场，什么点子都有，质量参差但数量管够。上午想做账号，下午想做品牌，晚上已经给咖啡馆起好名。优点是不怕空白，灵感来得像弹窗广告。副作用是执行力常年被点子挤到墙角。",
@@ -110,6 +119,7 @@ const TYPES = {
   J: {
     hook: "Judge",
     name: "互联网判官",
+    image: "./assets/generated/type-j-judge.webp",
     keywords: "锐评 / 审判 / 心里有弹幕",
     quote: "嘴上没说话，心里已开庭。",
     desc: "你发言不一定多，心里判得很快。这个标题用力过猛，那个观点站不住脚，这人一开口就有股熟悉的味儿。优点是判断快，抓问题准，雷达专扫离谱。副作用是看什么都能看出毛病，快乐被你亲手打了八折。",
@@ -122,6 +132,7 @@ const TYPES = {
   K: {
     hook: "KPI",
     name: "指标背锅侠",
+    image: "./assets/generated/type-k-kpi.webp",
     keywords: "KPI / 任务 / 锅来得很准",
     quote: "锅从天上来，KPI 从背后追。",
     desc: "你经常站在一种微妙位置：活大家都干了点，锅精准落你头上。会议里你只是点了个头，复盘时已经像项目总导演。优点是抗压，能兜底，关键时刻不掉链子。副作用是太能扛，别人就会把你当公共承重墙。",
@@ -134,6 +145,7 @@ const TYPES = {
   L: {
     hook: "Lazy",
     name: "懒得动星人",
+    image: "./assets/generated/type-l-lazy.webp",
     keywords: "启动困难 / 节能 / 躺着想很多",
     quote: "脑子已经开会，身体还没签到。",
     desc: "你的能力没问题，问题出在启动键位置偏远。别人说干就干，你需要酝酿、预热、心理建设，再顺手躺五分钟。优点是一旦启动，效率并不差。副作用是人生最难的任务，永远是打开那个文档。",
@@ -146,6 +158,7 @@ const TYPES = {
   M: {
     hook: "Money",
     name: "搞钱脑袋",
+    image: "./assets/generated/type-m-money.webp",
     keywords: "变现 / 成本 / 有没有搞头",
     quote: "万物皆可变现，连情绪都想挂小黄车。",
     desc: "你看什么都能拐到钱。别人看热点，你看流量；别人搞爱好，你看转化；别人发疯，你想这能不能做成账号。优点是现实、敏锐，会算账，商业嗅觉比外卖定位还准。副作用是太会算，快乐到你手里都要先过 ROI。",
@@ -158,6 +171,7 @@ const TYPES = {
   N: {
     hook: "NPC",
     name: "随机路人甲",
+    image: "./assets/generated/type-n-npc.webp",
     keywords: "随缘 / 低存在感 / 主线漂移",
     quote: "主线任务没开，地图倒是跑挺远。",
     desc: "你的人生像开放世界随机刷新。今天想努力，明天想消失，后天突然出现在一个八竿子打不着的新兴趣里。优点是自由，灵活，很难被固定剧本困住。副作用是太随缘，连自己都等不到下一集预告。",
@@ -170,6 +184,7 @@ const TYPES = {
   O: {
     hook: "OK",
     name: "都行都可以",
+    image: "./assets/generated/type-o-ok.webp",
     keywords: "随和 / 选择困难 / 内心扣分",
     quote: "嘴上都行，心里已扣三分。",
     desc: "你嘴上“都行”，心里有一套比高考志愿还复杂的偏好系统。别人真选了雷区，你表面微笑，内心默默记一笔。优点是包容，好相处，不爱制造冲突。副作用是需求不说，委屈全靠自己内存硬扛。",
@@ -182,6 +197,7 @@ const TYPES = {
   P: {
     hook: "PPT",
     name: "汇报型人格",
+    image: "./assets/generated/type-p-ppt.webp",
     keywords: "结构 / 重点 / 首先其次最后",
     quote: "灵魂里住着一个目录页。",
     desc: "你连吐槽都带目录。别人讲八卦讲情绪，你讲背景、现状、影响、解决方案，最后补一句“以上”。优点是逻辑清楚，能把乱麻说成流程图。副作用是朋友只是想听瓜，你交了一份口头 PPT。",
@@ -194,6 +210,7 @@ const TYPES = {
   Q: {
     hook: "Question",
     name: "十万个为什么",
+    image: "./assets/generated/type-q-question.webp",
     keywords: "追问 / 好奇 / 对敷衍过敏",
     quote: "一句话没说圆，你能追出族谱。",
     desc: "只要哪里没讲清楚，你立刻弹出：为什么？凭什么？然后呢？别人只是随口一说，你已经把现场推进答辩环节。优点是能挖深，能抓漏洞，适合研究复杂问题。副作用是问太细，聊天对象会开始怀疑自己在被面试。",
@@ -206,6 +223,7 @@ const TYPES = {
   R: {
     hook: "Retry",
     name: "人生重开党",
+    image: "./assets/generated/type-r-retry.webp",
     keywords: "撤回 / 读档 / 再来一版",
     quote: "人生没有撤回键，你很不满意。",
     desc: "遇到问题，你先看有没有撤回键。消息想撤，方案想改，人生最好支持 Ctrl+Z，最好还能保存多个版本。优点是有修正意识，不怕推倒重来。副作用是重开太多，第一章都快被你盘包浆了。",
@@ -218,6 +236,7 @@ const TYPES = {
   S: {
     hook: "Social",
     name: "社交显眼包",
+    image: "./assets/generated/type-s-social.webp",
     keywords: "接话 / 救场 / 存在感报警",
     quote: "场子一冷，你就自动开机。",
     desc: "群里一冷场，你浑身难受；朋友一尴尬，你立刻补位。空气安静三秒，你就想给它插上电。优点是能带气氛，会救场，让人放松。副作用是太爱补位，容易把自己活成移动暖场机。",
@@ -230,6 +249,7 @@ const TYPES = {
   T: {
     hook: "Talk",
     name: "嘴强王者",
+    image: "./assets/generated/type-t-talk.webp",
     keywords: "会说 / 懂王 / 行动排队中",
     quote: "嘴已经通关，手还在新手村。",
     desc: "你讲道理像开发布会，规划人生像写白皮书。真到开干，大脑激情演讲，身体原地旁听。优点是表达强，能把事情说得很有道理。副作用是说太爽，会产生“我已经推进了”的幻觉。",
@@ -242,6 +262,7 @@ const TYPES = {
   U: {
     hook: "Up",
     name: "上头冲锋队",
+    image: "./assets/generated/type-u-up.webp",
     keywords: "热血 / 开冲 / 三分钟烈火",
     quote: "上头时像火箭，冷却后像截图纪念。",
     desc: "你一上头，世界都拦不住。新项目先起名，新爱好先下单，新计划先建群，至于坚持，明天再议。优点是启动快，有感染力，能把冷场点成火场。副作用是退烧也快，留下半柜装备和一堆“新建文件夹 3”。",
@@ -254,6 +275,7 @@ const TYPES = {
   V: {
     hook: "VIP",
     name: "精致讲究人",
+    image: "./assets/generated/type-v-vip.webp",
     keywords: "审美 / 细节 / 眼睛有脾气",
     quote: "可以将就，但眼睛不同意。",
     desc: "别人说差不多，你说差很多。功能能用还不够，排版、质感、配色、氛围，一个都别想糊弄过去。优点是标准高，能把普通东西收拾得像样。副作用是太讲究，买个杯子都能研究到凌晨两点。",
@@ -266,6 +288,7 @@ const TYPES = {
   W: {
     hook: "Work",
     name: "天选打工人",
+    image: "./assets/generated/type-w-work.webp",
     keywords: "嘴上离职 / 手上交付 / 命里有班",
     quote: "嘴上不干了，手上又保存了。",
     desc: "你每天都想跑路，文件每天都准时发。嘴上骂骂咧咧，手上改得整整齐齐，精神反抗很激烈，实际交付很稳定。优点是靠谱，能扛事，截止日期前自带求生本能。副作用是太靠谱，老板会误判你还有 30% 余量。",
@@ -278,6 +301,7 @@ const TYPES = {
   X: {
     hook: "Xuan",
     name: "玄学许愿家",
+    image: "./assets/generated/type-x-xuan.webp",
     keywords: "转运 / 许愿 / 求求了文学",
     quote: "命运负责玄学，你负责催单。",
     desc: "你努力归努力，玄学也要顺手安排。该投简历投简历，该转锦鲤转锦鲤，主打一个人类努力和宇宙外包双线并行。优点是心态弹性大，总能给自己找点希望。副作用是许愿太多，执行容易坐在旁边等通知。",
@@ -290,6 +314,7 @@ const TYPES = {
   Y: {
     hook: "Yes",
     name: "好好好机器",
+    image: "./assets/generated/type-y-yes.webp",
     keywords: "答应 / 配合 / 灵魂离线",
     quote: "嘴上好好好，灵魂已下线。",
     desc: "“好好好”“可以可以”“没问题”是你的自动回复三件套。表面配合度拉满，内心小人已经开始无声尖叫。优点是好协作，情绪稳定，场面上很给人面子。副作用是答应太快，最后发现自己接了一车别人倒出来的事。",
@@ -302,6 +327,7 @@ const TYPES = {
   Z: {
     hook: "Zero",
     name: "能量清零者",
+    image: "./assets/generated/type-z-zero.webp",
     keywords: "低电量 / 红色预警 / 亮屏困难",
     quote: "当前电量 1%，请停止社交并立即充电。",
     desc: "你的电量像用了五年的旧手机。出门 80%，见两个人 30%，回几条消息直接红色预警，晚上只想原地关机。优点是知道自己需要休息，很少硬装无限续航。副作用是电量太低时，连快乐递到手边都懒得拆包装。",
@@ -583,6 +609,15 @@ function renderResult(forcedType) {
   $("result-full-title").textContent = fullName;
   $("result-keywords").textContent = type.keywords;
   $("result-quote").textContent = type.quote;
+  if (type.image) {
+    $("result-image").src = type.image;
+    $("result-image").alt = `${fullName} 插图`;
+    $("result-figure").classList.remove("hidden");
+  } else {
+    $("result-image").removeAttribute("src");
+    $("result-image").alt = "";
+    $("result-figure").classList.add("hidden");
+  }
   $("result-desc").textContent = type.desc;
   $("result-ai").textContent = type.ai;
   $("result-ai-pick").textContent = type.aiPick;
