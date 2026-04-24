@@ -74,6 +74,10 @@ button {
   align-items: stretch;
 }
 
+.hero-grid-single {
+  grid-template-columns: 1fr;
+}
+
 .hero-copy,
 .poster-panel,
 .question-card,
