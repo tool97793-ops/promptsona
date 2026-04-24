@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promptsona｜A-Z 抽象人测试</title>
+    <meta
+      name="description"
+      content="测测你的 Prompt（提示词）型人格。简中互联网嘴替型 AI 人格测试。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" id="start-screen">
+        <div class="ticker" aria-hidden="true">
+          <span>Promptsona</span>
+          <span>提示词型人格</span>
+          <span>简中互联网 AI 档案</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">A-Z PERSONALITY FILE</p>
+            <h1>Promptsona</h1>
+            <p class="subtitle">测测你的 Prompt（提示词）型人格</p>
+            <p class="intro">
+              不装专业，只负责精准开麦。20 道题，把你和 AI 相处时的精神分身从 A 到 Z 里抓出来。
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" id="start-btn" type="button">
+                开始测试
+              </button>
+              <button class="ghost-btn" id="random-btn" type="button">
+                随机看一个结果
+              </button>
+            </div>
+          </div>
+
+          <div class="poster-panel" aria-label="结果卡片示意">
+            <div class="stamp">FILE 26</div>
+            <div class="big-letter">F</div>
+            <h2>摸鱼圣体</h2>
+            <p>人在工位，心在免打扰。</p>
+            <div class="tag-row">
+              <span>低功耗</span>
+              <span>精神省电</span>
+              <span>假装在线</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="quiz-screen">
+        <div class="topbar">
+          <button class="text-btn" id="back-btn" type="button">上一题</button>
+          <div class="progress-wrap" aria-label="答题进度">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <button class="text-btn" id="restart-btn" type="button">重来</button>
+        </div>
+
+        <article class="question-card">
+          <p class="question-count" id="question-count"></p>
+          <h2 id="question-title"></h2>
+          <div class="options" id="options"></div>
+        </article>
+      </section>
+
+      <section class="result hidden" id="result-screen">
+        <div class="result-layout">
+          <article class="result-card" id="share-card">
+            <p class="eyebrow">Promptsona Result</p>
+            <div class="result-head">
+              <div class="result-letter" id="result-letter"></div>
+              <div>
+                <h2 id="result-name"></h2>
+                <p id="result-keywords"></p>
+              </div>
+            </div>
+            <p class="full-title" id="result-full-title"></p>
+            <p class="quote" id="result-quote"></p>
+            <p class="result-desc" id="result-desc"></p>
+            <div class="result-block">
+              <h3>AI 使用说明</h3>
+              <p id="result-ai"></p>
+            </div>
+            <div class="result-block">
+              <h3>适合你的 AI</h3>
+              <p id="result-ai-pick"></p>
+            </div>
+          </article>
+
+          <aside class="side-panel">
+            <div class="relation-box">
+              <h3>关系网</h3>
+              <div class="relation-item">
+                <span>适合当朋友</span>
+                <p id="friend-types"></p>
+              </div>
+              <div class="relation-item">
+                <span>适合当情侣</span>
+                <p id="lover-types"></p>
+              </div>
+              <div class="relation-item danger">
+                <span>高能化学反应</span>
+                <p id="chemistry-types"></p>
+              </div>
+            </div>
+
+            <div class="score-box">
+              <h3>你的隐藏排行</h3>
+              <ol id="score-list"></ol>
+            </div>
+
+            <div class="result-actions">
+              <button class="primary-btn" id="again-btn" type="button">
+                再测一次
+              </button>
+              <button class="ghost-btn" id="copy-btn" type="button">
+                复制结果文案
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
